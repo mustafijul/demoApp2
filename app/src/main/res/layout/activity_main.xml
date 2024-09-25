@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Medicines using CheckBox -->
+    <TextView
+        android:id="@+id/textView_medicines"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select medicines:"
+        android:textSize="18sp"/>
+
+    <CheckBox
+        android:id="@+id/checkBox_paracetamol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Paracetamol"/>
+
+    <CheckBox
+        android:id="@+id/checkBox_ibuprofen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ibuprofen"/>
+
+    <CheckBox
+        android:id="@+id/checkBox_antibiotic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Antibiotic"/>
+
+    <!-- Delivery options using RadioButtons -->
+    <TextView
+        android:id="@+id/textView_delivery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose delivery option:"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroup_delivery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/radioButton_pickup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pickup"/>
+
+        <RadioButton
+            android:id="@+id/radioButton_homeDelivery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Home Delivery"/>
+    </RadioGroup>
+
+    <!-- Rating for pharmacy service -->
+    <TextView
+        android:id="@+id/textView_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rate our service:"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"/>
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:stepSize="0.5"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Adjust medicine quantity using SeekBar -->
+    <TextView
+        android:id="@+id/textView_quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Adjust medicine quantity:"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"/>
+
+    <SeekBar
+        android:id="@+id/seekBar_quantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="10"/>
+
+    <TextView
+        android:id="@+id/textView_quantityValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quantity: 1"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Toggle the order confirmation using Switch -->
+    <TextView
+        android:id="@+id/textView_confirmation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirm order:"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"/>
+
+    <Switch
+        android:id="@+id/switch_confirmation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirm Order"/>
+
+</LinearLayout>
